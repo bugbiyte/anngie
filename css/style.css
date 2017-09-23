@@ -21,7 +21,7 @@ body {
 	grid-template-columns: 3fr 6fr 1fr;
 	grid-column-gap: 25px;
 	width: 80%;
-	margin: 75px auto;
+	margin: 29px auto;
 	text-align: left;
 }
 
@@ -31,9 +31,14 @@ body {
 	text-align: center;
 	background-color: teal;
 	padding: 0px 25px 75px 25px;
-  }
-  
 
+  }
+
+.sayhello p{
+  font-size: 16px;
+  color: black;
+
+}
 .about-section p {
 	font-size: 1.1em;
 }
@@ -50,8 +55,13 @@ body {
 
 .fa {
 	display: block;
-	font-size: 3em;
+	font-size: 1.5em;
 	padding-top: 10px;
+}
+
+.scale-with-grid {
+    max-width: 100%;
+    height: auto;
 }
   /* Responsive images */
 img {
@@ -67,6 +77,11 @@ main{
     margin: 0 auto;
 }
 
+.leadtitles {
+  line-height: 0;
+  text-align: center;
+  margin-top:
+}
 
 .social-links {
 	border-left: solid 1px #333;
@@ -100,15 +115,14 @@ h1 {
 
 h2{
   font-size: 30px;
-  padding-top:75px;
+  padding-top:50px;
 }
 
-h3{
-  font-size: 15px;
-  text-align: center;
-  padding-top:50px;
-  color: white;
+h3 {
+  margin-top: 60px;
+  padding: 5px;
 }
+
 
 nav{
   width: 100%;
@@ -122,6 +136,10 @@ nav{
   /*height: 90px;*/
 }
 
+.space-right {
+  margin-right: 50px;
+}
+
 header a {
   color: white;
 }
@@ -133,6 +151,10 @@ main a {
 }
 
 
+
+/*================================================
+NAV STYLES HERE!!!!!!!
+================================================*/
 nav ul {
   margin: 0;
   padding: 0;
@@ -140,8 +162,16 @@ nav ul {
 
 nav li{
   display: inline-block;
-  margin-right: 40px;
 }
+
+.hamburger {
+  display: none;
+}
+
+.close {
+  display: none;
+  }
+
 
 .ziggy {
 	background: url(../images/work/zigzag-up.png) repeat-x;
@@ -160,7 +190,6 @@ nav li{
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 
 
 /* ----------------------------------------
@@ -223,26 +252,34 @@ footer p {
   color: teal;
 }
 
-.hamburger {
-  display: none;
-}
 
 @media screen and (max-width:882px) {
   main{
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 30px;
   }
-}
 
 @media screen and (max-width: 800px) {
   .hamburger {
     display: block;
+    padding-left: 25px;
+    margin-left: 0;
   }
-  nav li {
+
+  nav {
+    text-align: left;
+  }
+
+  .nav-links li {
     display: block;
+    height:72px;
+    border-bottom: 4px solid rgba(21,20,20,0.2)
   }
-  nav ul{
-    display: none;
+
+  nav ul a {
+    line-height:110px;
+    font-size: 14px;
+    padding: 25px;
   }
 
 }
@@ -252,8 +289,12 @@ footer p {
       grid-column-gap: 30px;
   }
 
+.envelope {
+  width: 20%;
+}
   .overlay-wrapper {
   width: 100%;
+
   }
 .overlay {
   height: 68%;
@@ -265,7 +306,8 @@ footer p {
 .fa {
   display: inline-block;
 }
-}
+
+
 
 
 /* ----------------------------------------
